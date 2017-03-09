@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+<body>
+	<table id="tables">
+                 <tr id = "1" class="2">                
+                   <td id="1000">百度</td>
+                   <td id="1001">谷歌</td>
+                   <td id="1002">搜狗</td>
+                 </tr>
+                  <tr id = "2" value="hi">
+                   <td id="1003">优酷</td>
+                   <td id="1004" value="hi tom">土豆</td>
+                   <td id="1005">酷6</td>
+                 </tr>
+                  <tr id = "3">
+                   <td id="1006">163</td>
+                   <td id="1007">126</td>
+                   <td id="1008">新浪</td>
+                 </tr>
+                 <p>姓名：<input type="text" id="test" value="米老鼠"></p>
+
+	</table>
+</body>
+<script>
+	$("#tables").children().children().children("#1004").css('background-color', 'green');
+	var table = $("#tables").children().children().children("#1004").attr("value");
+	var table2 = $("#tables").children().children().eq(1).children().eq(0).attr("id");
+
+	alert(table);
+	alert(table2);
+    /* var t1 = $("#1000").text();
+    alert(t1);
+    
+    var t2 = $("#1001").html();
+    alert(t2);
+
+    var t3 = $("#3").html();
+    alert(t3); 
+
+    var t4 = $("#test").val();
+    alert(t4);
+
+    var t5 = $("#1004").attr("value");
+    alert(t5);*/
+
+    
+</script>
+</html>
