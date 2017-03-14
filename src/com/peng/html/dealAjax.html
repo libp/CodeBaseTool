@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.6.4/jquery.js"></script>
+<script type="text/javascript">
+    $(function(){
+        //按钮单击时执行
+        $("#testAjax").mouseleave(function(){
+              //取Ajax返回结果
+              //为了简单，这里简单地从文件中读取内容作为返回数据
+              //htmlobj=$.ajax({url:"/Readme.txt",async:false});
+               //显示Ajax返回结果
+               $("#myDiv").html("hi");
+         });
+    });
+</script>    
+</head>
+<body>
+        <div id="myDiv"><h2>通过 AJAX 改变文本</h2></div>
+        <button id="testAjax" type="button">Ajax改变内容</button>
+</body>
+</html>
