@@ -1,4 +1,4 @@
-package com.peng.base;
+package com.peng.arithmetic;
 
 import java.util.Iterator;
 

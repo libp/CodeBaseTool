@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <title>Insert title here</title>
 
  
@@ -14,6 +15,7 @@
 
 function myBrowser(){
     var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+    alert(userAgent);
     var isOpera = userAgent.indexOf("Opera") > -1;
     alert(isOpera);
     if (isOpera) {
