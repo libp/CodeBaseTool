@@ -11,29 +11,22 @@ import java.util.Iterator;
  */
 /*
  * 冒泡排序，就是一次一次比，把最小的放最前面，或最大的放最后面.
- * 冒泡排序有问题，要修正20170523
  */
 public class BuddbeSort {
 	public static void main(String[] args) {
-		int[] arr = {3,2,6,8,2,9,5,4,1};
-		System.out.println("排序前数组为：");
-		for( int num : arr ){
-			System.out.print(num+" ");
-		}
-		for(int i = 0; i < arr.length-1; i++){
-			for (int j = 0; j < arr.length-i-1; j++) {
-				if(arr[j]>arr[j+1]){
-					int tmp = arr[j];
-					arr[j] = arr[j+1];
-					arr[j+1] = tmp;
+		 int a[]={49,38,65,97,76,13,27,49,78,34,12,64,5,4,62,99,98,54,56,17,18,23,34,15,35,25,53,51};
+			int temp=0;
+			for(int i=0;i<a.length-1;i++){
+				for(int j=0;j<a.length-1-i;j++){
+				if(a[j]>a[j+1]){
+					temp=a[j];
+					a[j]=a[j+1];
+					a[j+1]=temp;
+				}
 				}
 			}
-		}
-		System.out.println();
-		System.out.println("排序后的数组为：");
-		for( int num : arr){
-			System.out.print(num + " ");
-		}
+			for(int i=0;i<a.length;i++)
+				System.out.print(a[i]+",");
 	}
 }
 
