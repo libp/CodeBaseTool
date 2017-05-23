@@ -10,7 +10,8 @@ import java.util.Iterator;
  * @return  
  */
 /*
- * 冒泡排序，就是一次一次比，把最小的放最前面，或最大的放最后面
+ * 冒泡排序，就是一次一次比，把最小的放最前面，或最大的放最后面.
+ * 冒泡排序有问题，要修正20170523
  */
 public class BuddbeSort {
 	public static void main(String[] args) {
@@ -19,7 +20,7 @@ public class BuddbeSort {
 		for( int num : arr ){
 			System.out.print(num+" ");
 		}
-		for(int i = 0; i < arr.length; i++){
+		for(int i = 0; i < arr.length-1; i++){
 			for (int j = 0; j < arr.length-i-1; j++) {
 				if(arr[j]>arr[j+1]){
 					int tmp = arr[j];
