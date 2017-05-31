@@ -3,6 +3,8 @@ package com.peng.baseKnow;
 import java.util.HashMap;
 import java.util.Map;
 
+
+
 /** 
  * @author Peng
  * @Email 924701358@qq.com
@@ -13,7 +15,7 @@ import java.util.Map;
 
 public class SpiltString {
 	public static void main(String asg[]) {
-		String name = "PIT-LE-LSR-VM-ptculgp14";
+		/*String name = "PIT-LE-LSR-VM-ptculgp14";
 		String rule = "PIT-LE-LSR-VM-";
 		int length = rule.length();
 		String name2 = "PITptculgp14";
@@ -25,13 +27,13 @@ public class SpiltString {
 		System.out.println(name.substring(length)+"=============");
 		System.out.println("ok"+length);
 		
-		
-		
 		Map<String, String> map = new HashMap<String, String>();
 		map.put("id", "");
 		map.put("groupname", "dd");
 		map.put("id", "2222");
-		System.out.println(map.get("id"));
+		System.out.println(map.get("id"));*/
+		String test = "1,2";
+		System.out.println(test.indexOf(","));  //输出,的索引位置
 	}
 }
 
