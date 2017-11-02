@@ -12,10 +12,18 @@ public class Jasypt {
 	public static void main(String[] args) {
 		
 		BasicTextEncryptor encryptor = new BasicTextEncryptor();
-		encryptor.setPassword("lbp");
-		String encrypted = encryptor.encrypt("000000");
+		encryptor.setPassword("password");
+		String encrypted = encryptor.encrypt("xuyaojiamideshuju");
 		System.out.println(encrypted);
-		System.out.println();
+		
+		
+		
+		 BasicTextEncryptor textEncryptor2 = new BasicTextEncryptor();  
+		 textEncryptor2.setPassword("password");  
+		 String decrypt = textEncryptor2.decrypt("xuyaojiemidezifu");  
+		 System.out.println(decrypt);  
+		
+		
 	}
 }
 
